@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial=1.0">
+    <title>Supermercado</title>
+</head>
+<body>
+    <header>
+      <h1>Supermercado</h1>  
+      <p>EL VERDADERO AHORRO</p>
+    </header>
+    <nav class="menu-navegacion">
+        <ul>
+            <li><a href="index.html" class="activo">Inicio</a></li>
+        </ul>
+    </nav>
+    <main class ="contenedor">
+        <h2>Formulario de Afiliación de Clientes</h2>
+        <form action = "afiliados.php" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <div>
+                    <label>Ingrese su nombre</label>
+                    <input type="text" name="nombre" id="nombre" required placeholder="Ingrese su nombre y apellido" minlength="10" maxlength="100">
+                </div>
+
+                <div>
+                    <label>Ingrese su DNI</label>
+                    <input type="text" name="dni" id="dni" required placeholder="Ingrese su numero de identidad" minlength="13" maxlength="13 pattern="[0-9]{4}-[0-9]{4}-[0-9]{5}"">
+                </div>
+
+                <div>
+                    <label>Ingrese su numero de telefono</label>
+                    <input type="tel" name="telefono" id="telefono" required placeholder="Ingrese su numero de telefono" minlength="11" maxlength="11" >
+                </div>
+                
+                <div>
+                    <label>Ingrese su fecha de nacimiento</label>
+                    <input type="date" name="fecha_nacimiento" id="fecha_namiento" required placeholder="Ingrese su fecha de nacimiento" min="1945-01-01" max="2008-01-01" >
+                </div>
+
+                <div>
+                    <label>Ingrese su dirección</label>
+                    <input type="text" name="direccion" id="direccion" required placeholder="Ingrese su direccion">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Información de compra</legend>
+                <div>
+                    <label>Seleccione:</label>
+                    <select id="sucursal favorita">
+                        <option>Blv Morazan</option>
+                        <option>City Mall</option>
+                        <option>Blv Suyapa</option>
+                    </select>
+                </div>
+            </fieldset>
+            
+        </form>
+    </main>
+</body>
+</html>

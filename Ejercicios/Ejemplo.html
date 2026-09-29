@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado El Ahorro | Calidad y Frescura para tu Hogar</title>
+    <!-- Vinculación a hoja de estilos externa (se activará al maquetar con CSS): -->
+    <!-- <link rel="stylesheet" href="estilos.css"> -->
+</head>
+<body>
+    <!-- Encabezado Institucional -->
+    <header class="encabezado-tienda">
+        <div class="logo-area">
+            <h1>🛒 Supermercado El Ahorro</h1>
+            <p class="eslogan">El verdadero ahorro para las familias hondureñas desde 1995</p>
+        </div>
+        <div class="contacto-rapido">
+            <span>📞 Pedidos: +504 2239-0000</span> | 
+            <span>📍 Tegucigalpa y San Pedro Sula</span>
+        </div>
+    </header>
+
+    <!-- Barra de Navegación Semántica -->
+    <nav class="menu-navegacion">
+        <ul>
+            <li><a href="index.html" class="activo">Inicio</a></li>
+            <li><a href="#frutas">Frutas y Verduras</a></li>
+            <li><a href="#carnes">Carnes y Mariscos</a></li>
+            <li><a href="#lacteos">Lácteos y Huevos</a></li>
+            <li><a href="#abarrotes">Abarrotes</a></li>
+            <li><a href="registro.html">Club de Puntos (Afíliate)</a></li>
+            <li><a href="cv.html">Desarrollador Web</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido Nuclear Único -->
+    <main class="contenido-principal">
+        <!-- Sección de Bienvenida y Ofertas Destacadas -->
+        <section id="hero-bienvenida" class="seccion-bienvenida">
+            <h2>Grandes Ofertas de la Semana en Canasta Básica</h2>
+            <p>Aprovecha los mejores precios en productos frescos 100%.</p>
+        </section>
+
+        <!-- Catálogo Semántico de Productos con <article> -->
+        <section id="catalogo-ofertas" class="seccion-catalogo">
+            <h2>Productos Destacados del Día</h2>
+
+            <!-- Producto 1: Lácteo -->
+            <article class="producto-tarjeta" id="prod-101">
+                <span class="etiqueta-oferta">Ahorro Especial</span>
+                <figure>
+                    <img src="leche-sula.webp" alt="Bolsa de leche entera pasteurizada Sula de 1 litro" width="220" height="200">
+                    <figcaption>Leche Entera Sula 1L Pasteurizada</figcaption>
+                </figure>
+                <p class="precio"><strong>L. 32.50</strong> <del>L. 36.00</del></p>
+                <p class="descripcion">Rica en calcio y vitamina D, producida por ganaderos de Olancho.</p>
+                <button type="button" class="btn-comprar">Añadir a la Canasta</button>
+            </article>
+
+            <!-- Producto 2: Grano Básico -->
+            <article class="producto-tarjeta" id="prod-102">
+                <figure>
+                    <img src="arroz-progreso.webp" alt="Bolsa de arroz blanco grano entero Progreso de 1 libra" width="220" height="200">
+                    <figcaption>Arroz Blanco Progreso 1 lb</figcaption>
+                </figure>
+                <p class="precio"><strong>L. 14.50</strong></p>
+                <p class="descripcion">Grano seleccionado de primera calidad, rendimiento garantizado.</p>
+                <button type="button" class="btn-comprar">Añadir a la Canasta</button>
+            </article>
+
+            <!-- Producto 3: Fruta -->
+            <article class="producto-tarjeta" id="prod-103">
+                <figure>
+                    <img src="manzanas-rojas.webp" alt="Bolsa con 4 manzanas rojas frescas importadas" width="220" height="200">
+                    <figcaption>Manzana Roja Gala (Bolsa de 4 uds)</figcaption>
+                </figure>
+                <p class="precio"><strong>L. 48.00</strong></p>
+                <p class="descripcion">Crujientes, dulces y ricas en fibra natural.</p>
+                <button type="button" class="btn-comprar">Añadir a la Canasta</button>
+            </article>
+
+            <!-- Producto 4: Carne -->
+            <article class="producto-tarjeta" id="prod-104">
+                <figure>
+                    <img src="carne-asar.webp" alt="Corte de carne de res magra para asar por libra" width="220" height="200">
+                    <figcaption>Carne de Res para Asar (1 lb)</figcaption>
+                </figure>
+                <p class="precio"><strong>L. 85.00</strong></p>
+                <p class="descripcion">Corte fresco nacional, ideal para asados y almuerzos familiares.</p>
+                <button type="button" class="btn-comprar">Añadir a la Canasta</button>
+            </article>
+        </section>
+
+        <!-- Tabla Semántica de Canasta Básica -->
+        <section id="tabla-precios" class="seccion-tabla">
+            <h2>Comparativa Oficial de Canasta Básica Semanal</h2>
+            <table class="tabla-canasta">
+                <thead>
+                    <tr>
+                        <th>Artículo de Primera Necesidad</th>
+                        <th>Presentación</th>
+                        <th>Precio Regular</th>
+                        <th>Precio Club El Ahorro</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Frijol Rojo Nacional</td>
+                        <td>Bolsa de 5 lbs</td>
+                        <td>L. 110.00</td>
+                        <td><strong>L. 95.00</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Huevos Frescos de Granja</td>
+                        <td>Cartón de 30 uds</td>
+                        <td>L. 125.00</td>
+                        <td><strong>L. 112.00</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Aceite Vegetal Cocinero</td>
+                        <td>Botella de 750 ml</td>
+                        <td>L. 42.00</td>
+                        <td><strong>L. 37.00</strong></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><strong>Ahorro Promedio por Canasta Básica:</strong></td>
+                        <td><strong>L. 33.00</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <!-- Barra Lateral Tangencial -->
+    <aside class="barra-lateral">
+        <h3>🕒 Horarios de Atención en Sucursales</h3>
+        <ul>
+            <li><strong>Sucursal Blvd. Morazán:</strong> Lunes a Sábado 7:00 AM - 9:00 PM</li>
+            <li><strong>Sucursal Cascadas Mall:</strong> Lunes a Domingo 8:00 AM - 8:00 PM</li>
+            <li><strong>Servicio a Domicilio:</strong> Entregas en menos de 45 minutos en Tegucigalpa.</li>
+        </ul>
+    </aside>
+
+    <!-- Pie de Página Institucional -->
+    <footer class="pie-pagina">
+        <p>&copy; 2026 Supermercado El Ahorro S.A. | Todos los derechos reservados.</p>
+        <p>Portal desarrollado para la asignatura <strong>ISC-305 Programación Web</strong> | UNAH.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
