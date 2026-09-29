@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversiones Diversas La Orquidea</title>
+</head>
+<body>
+    <header>
+    <img src="imagenes/logo.jpg" alt="logo" width="220" height="200">
+    <div>
+        <h1>Inversiones Diversas La Orquídea</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href = "index.html">Inicio</a>
+            </li>
+            <li>
+                <a href = "servicios.html">Servicios</a>
+            </li>
+            <li>
+                <a href = "nuevo.html">Próximamente</a>
+            </li>
+            <li>
+                <a href = "envios.html">Envíos</a>
+            </li>
+            <li>
+                <a href = "nosotros.html">Sobre Nosotros</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Dejanos tus datos</h2>
+            <form action="clientes.php" method="POST" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <div>
+                        <label>Ingrese su nombre</label>
+                        <input type="text" name="nombre" id="nombre" required placeholder="Ingrese su nombre y apellido" minlength="10" maxlength="100">
+                    </div>
+
+                    <div>
+                        <label>Ingrese su DNI</label>
+                        <input type="text" name="dni" id="dni" required placeholder="Ingrese su numero de identidad" minlength="13" maxlength="13 pattern="[0-9]{4}-[0-9]{4}-[0-9]{5}"">
+                    </div>
+
+                    <div>
+                        <label>Ingrese su numero de telefono</label>
+                        <input type="tel" name="telefono" id="telefono" required placeholder="Ingrese su numero de telefono" minlength="11" maxlength="11" >
+                    </div>
+
+                    <div>
+                        <label>Correo Electrónico:*</label>
+                        <input type="email" id="correoAfiliado" name="correo" required placeholder="cliente@correo.com">
+                    </div>
+                
+                    <div>
+                        <label>Ingrese su dirección</label>
+                        <input type="text" name="direccion" id="direccion" required placeholder="Ingrese su direccion">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                <legend>¿Qué producto te interea?</legend>
+                <div>
+                    <label>Seleccione:</label>
+                    <select>
+                        <option>Ollas</option>
+                        <option>Cuchillos</option>
+                        <option>Escaleras</option>
+                        <option>Cafeteras</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Inversiones Diversas La Orquidea | Todos los derechos reservados.</p>
+        <p>Síguenos en:
+            <a href="https://www.facebook.com/share/1CnN4RSRBC/">Facebook</a> |
+        </p>
+        <p>Desarrollado por: Yadira Elizabeth Zepeda Salgado - NumCuenta: 20221030821</p>
+        <p>Portal desarrollado para la asignatura <strong>ISC-305 Programación Web</strong> | UNAH.</p>
+    </footer>
+</body>
+</html>
